@@ -1,0 +1,24 @@
+.link-button{
+    background-color: rgb(24, 12, 24);
+    padding: 10px 10px;
+    border-radius: 5px;
+    color:black;
+    font-weight: 200;
+}
+.click:hover{
+    text-decoration:none;
+    color: forestgreen;
+}
+
+.text-white{
+    text-align: center;
+    
+}
+.panda-card{
+    border: 0;
+}
+.panda-card-footer{
+    background-color: white;
+    border: 0;
+}
+

@@ -1,0 +1,11 @@
+.back{
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(
+          
+        rgba(0, 0, 0, 0.884),rgba(0, 0, 0, 0.527)
+      ),  url(../../images/6005006789_f20327d421_b.jpg);
+    background-size: cover;
+    min-height: 110vh;
+    font-family: 'Merriweather', serif;
+}

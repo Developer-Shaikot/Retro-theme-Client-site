@@ -9,7 +9,7 @@ const ManageBlog = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5055/addBlogs`;
+        const url = `https://rocky-inlet-75686.herokuapp.com/addBlogs`;
         fetch(url)
         .then(res => res.json())
         .then(data => setManage(data));
@@ -19,12 +19,13 @@ const ManageBlog = () => {
         <div className="back">
             <Navbar></Navbar>
             <div  className="container">
-            <h2 style={{color: 'white'}}>Manage Blogs</h2>
-            <div style={{marginLeft:'15%',marginRight:'15%'}} className="row d-flex align-items-center p-5" >
-           
             {
                 manage.length === 0 && <div className="text-white">...Loading</div>
             }
+            <h2 style={{color: 'white'}}>Manage Blogs</h2>
+            <div style={{marginLeft:'15%',marginRight:'15%'}} className="row d-flex align-items-center p-5" >
+           
+           
             {
                 manage.map(manage => <ManageBlogData manage={manage}></ManageBlogData>)
             }

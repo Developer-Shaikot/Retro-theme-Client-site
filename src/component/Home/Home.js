@@ -10,7 +10,7 @@ const Home = () => {
 
 
     useEffect(() =>{
-        fetch('http://localhost:5055/addBlogs')
+        fetch('https://rocky-inlet-75686.herokuapp.com/addBlogs')
         .then(res => res.json())
         .then(data => setBlogs(data))
     },[])
@@ -20,11 +20,10 @@ const Home = () => {
             <Navbar></Navbar>
             <br />
             <p className="container">
-                       <strong style={{color: 'rgb(244, 245, 245)', marginTop:'20px', fontFamily: 'Merriweather, serif', fontStyle: 'oblique',fontSize: '40px'}}>Themes and <span className="text-info">Demos List</span>  </strong> 
+                       <strong style={{color: 'rgb(244, 245, 245)', marginTop:'20px', fontFamily: 'Merriweather, serif', fontStyle: 'oblique',fontSize: '30px'}}>Themes and <span className="text-info">Demos List</span>  </strong> 
                     </p>
-                    <h2 style={{fontFamily: 'Merriweather, serif', fontStyle: 'inherit',fontSize: '30px', color:'yellow'}} className="container">Retro Theme</h2>
             <div  className="text-center">
-            <div  class="row row-cols-1 row-cols-md-3 g-4 rounded-3 p-5" >
+            <div  class="row row-cols-1 row-cols-md-3 g-4 rounded-3 " >
             {
                 blogs.length === 0 && <div className="container text-white">...Loading</div>
             }

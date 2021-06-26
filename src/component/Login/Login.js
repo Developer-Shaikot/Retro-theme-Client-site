@@ -39,7 +39,13 @@ function Login() {
       })
   }
 
+  const fbSignIn = () => {
+      handleFbSignIn()
+      .then(res => {
+        handleResponse(res, true);
+      })
 
+  }
 
   const signOut = () => {
       handleSignOut()
@@ -97,7 +103,7 @@ function Login() {
         <div className="container">
         <div className=" p-2" style={{textAlign: 'center', marginLeft:'10%',marginRight:'10%'}}>
     <div>
-      <h1 className="text-white">Retro Authentication</h1>
+      <h1 className="text-white">Our own Authentication</h1>
       <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
       <label className="text-white" htmlFor="newUser">New User Sign up</label>
       <form style={locationBoxStyle} className="form-horizontal"  onSubmit={handleSubmit}>

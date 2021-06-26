@@ -17,7 +17,7 @@ const Admin = () => {
             description:data.description,
             imageURL: imageURL
         }
-        const url = `http://localhost:5055/addBlogs`
+        const url = `https://rocky-inlet-75686.herokuapp.com/addBlogs`
 
         fetch(url, {
             method: 'POST',

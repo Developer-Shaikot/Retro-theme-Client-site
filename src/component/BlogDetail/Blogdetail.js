@@ -11,7 +11,7 @@ const Blogdetail = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5055/addBlog/${id}`;
+        const url = `https://rocky-inlet-75686.herokuapp.com/addBlog/${id}`;
         fetch(url)
             .then(res => res.json())
             // .then(data => console.log(data[0]))

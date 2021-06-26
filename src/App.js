@@ -40,9 +40,9 @@ function App() {
       
           <Testimonials></Testimonials>
        </Route>
-        <Route path="/admin">
+        <PrivateRoute path="/admin">
           <Admin/>
-        </Route>
+        </PrivateRoute>
        <Route exact path="/login">
         <Login></Login>
        </Route>

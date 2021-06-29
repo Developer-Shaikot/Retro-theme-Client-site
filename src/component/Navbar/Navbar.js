@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'
 
 
@@ -36,10 +37,10 @@ const Navbar = () => {
 
                          <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarsExample09">
                           <div className="navbar-nav ml-5">
-                        <a className="nav-link active  text-white" aria-current="page" href="/">Home</a>
-                              <a className="nav-link text-white"  href="/reviews">Reviews</a> 
-                              <a className="nav-link text-white" href="/admin">Admin</a>
-                           <a className="nav-link text-white" href="/login" tabIndex="-1" aria-disabled="true">Login</a>  
+                        <Link className="nav-link active  text-white" aria-current="page" to="/">Home</Link>
+                              <Link className="nav-link text-white"  to="/reviews">Reviews</Link> 
+                              <Link className="nav-link text-white" to="/admin">Admin</Link>
+                           <Link className="nav-link text-white" to="/login" tabIndex="-1" aria-disabled="true">Login</Link>  
 
                         </div>
 

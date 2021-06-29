@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import ClearAllIcon from '@material-ui/icons/ClearAll';
 import AddIcon from '@material-ui/icons/Add';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Admin = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -61,10 +62,10 @@ const Admin = () => {
             Blogs
         </h4>
         <div >
-        <a className="manage" href="/manage"><ClearAllIcon> </ClearAllIcon> <strong className="p-2">Manage blogs </strong></a>
+        <Link className="manage" to="/manage"><ClearAllIcon> </ClearAllIcon> <strong className="p-2">Manage blogs </strong></Link>
         <br/>
         <br />
-        <a className="manage"  href="/admin"><AddIcon></AddIcon> <strong  className="p-2">Add blogs</strong></a>
+        <Link className="manage"  to="/admin"><AddIcon></AddIcon> <strong  className="p-2">Add blogs</strong></Link>
         <div className="manage-side">
        
         </div>
@@ -85,9 +86,8 @@ const Admin = () => {
         <label className="text-success">Description</label>
         <textarea {...register("description", { required: true })} className="form-control" name='description' rows="5" id="description"  />
         <br/>
-
-        <input className="form-control bg-success"  type="submit" />
-          
+        
+        <input  className="form-control bg-success text-white"  type="submit" />
      </form>
      <footer class="text-center mt-3 pt-3 mb-3 ml-5 justify-content-end text-light">@Retro Themed Blog {(new Date()).getFullYear()} Copyright All Rights Reserved</footer>
     <br />

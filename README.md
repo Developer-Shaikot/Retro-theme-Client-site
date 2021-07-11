@@ -1,6 +1,7 @@
 • Project Name : Retro Themed Blog
 
 • Live-site-link : https://retro-themed-project.web.app/
+  Admin pannel Login email: test@test.com Pass: #2021dev
 
 • Technology : React npm package, React-router-dom , React Bootstrap
 
